@@ -1,0 +1,58 @@
+body{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+   display: block;
+   color:#6b3a0a;
+   font-family: 'Lato', sans-serif; 
+   
+    }
+
+    .navbar-mymenu .navbar-brand{color:#6b3a0a;
+        font-size: 15px;}
+    .navbar-mymenu .navbar-brand:focus,.navbar-mymenu .navbar-brand:hover{
+        color:#6b3a0a;
+        font-size: 15px;}
+    .navbar-mymenu .navbar-nav .nav-link{color:#6b3a0a;
+        font-family: 'Lato', sans-serif; 
+        font-size: 700;
+        font-size: 15px;}
+    .navbar-mymenu .navbar-nav .nav-link:focus,.navbar-mymenu .navbar-nav .nav-link:hover{
+        color:#352617;
+        font-family: 'Lato', sans-serif; 
+        font-size: 700;
+        font-size: 16px}
+
+    
+
+    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+        background-color: #fff5aa !important;
+     }
+/*  ---------------------------------------------------------------------------------------------------------*/
+
+
+
+/* media 1000 */
+@media only screen and (max-width: 1100px){
+
+    body{
+        width: 100%;
+    }
+
+}
+
+/*  ---------------------------------------------------------------------------------------------------------*/
+
+
+
+/* 846 */
+@media only screen and (max-width: 846px){
+
+}
+
+
+
+/* media 845 */
+@media only screen and (max-width: 845px){
+
+}
