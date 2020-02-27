@@ -41,7 +41,7 @@
                     <!-- </ul>
                     <ul class="navbar-nav col-sm-9 justify-content-center" > -->
                         <li class="nav-item">
-                            <a class="nav-link" href="menu.php">MENU</a>
+                            <a class="nav-link" href="index.php">GŁÓWNA</a>
                         </li>
                         <!-- <li class="nav-item ">
                             <a class="nav-link" href="#">OFERTA SPECJALNA</a>
@@ -53,7 +53,7 @@
                             <a class="nav-link" href="#">DOSTAWA</a>
                         </li> -->
                         <li class="nav-item"> 
-                        <a class="nav-link" href="#">KONTAKT</a>
+                        <a class="nav-link" href="menu.php">MENU</a>
                         </li>
                     </ul>
                 </div>
