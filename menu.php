@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Maven+Pro:400,500,600,900&display=swap&subset=latin-ext" rel="stylesheet">     
     <link rel="stylesheet" href="style/style.css" type="text/css">
     <style>
+#ofertDessert,
 #ofeertOthers,        
 #offertPizza {
   display:none;
@@ -58,9 +59,10 @@
                 </div>
             </nav>
 
-            <div class="col-sm-12 align-content-center">
-                <button type="submit" onClick="myFunction()"  id="offert1"  >Pizza</button>
-                <button type="submit" onClick="myFunction1()"  id="offert2"  >Napoje</button>
+            <div class="col-sm-12 btn-group" role="group">
+                <button type="button" onClick="myFunction()"  id="offert1" class="btn btn-success"  >Pizza</button>
+                <button type="button" onClick="myFunction2()"  id="offert2" class="btn btn-outline-dark" >Napoje</button>
+                <button type="button" onClick="myFunction3()"  id="offert3" class="btn btn-danger" >Desery</button>
             </div>
         <div>
             <div id="offertPizza" class="mb-md-4 col-sm-12 table-responsive">
@@ -315,7 +317,7 @@
 
 
 <script>
-function myFunction1() {
+function myFunction2() {
   var x = document.getElementById("ofeertOthers");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -325,6 +327,94 @@ function myFunction1() {
 }
 </script>
 </div>
+
+<div id="dessert">
+
+
+
+<div id="ofertDessert" class="mb-md-4 col-sm-12 table-responsive">
+                
+    <table class="table table-sm table-striped">
+        <thead>
+            <tr>
+            <th scope="col" >lp</th>
+            <th scope="col" >nazwa</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">mała porcja</th>
+            <th scope="col">duża porcja</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>ciasto czekoladowe </td>
+            <td></td>
+            <td></td>
+            <td>5,00</td>
+            <td>8,00</td>
+            </tr>
+            
+            <tr>
+            <th scope="row" class="secLine">2</th>
+            <td>piernik</td>
+            <td></td>
+            <td></td>
+            <td>5,00</td>
+            <td>8,00</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">3</th>
+            <td>Szarlotka</td>
+            <td></td>
+            <td></td>
+            <td>3,00</td>
+            <td>7,00</td>
+            </tr>
+            
+            <tr>
+            <th scope="row">4</th>
+            <td>Mix owoców</td>
+            <td></td>
+            <td></td>
+            <td>3,00</td>
+            <td>7,00</td>
+            </tr>
+
+            <tr>
+            <th scope="row">5</th>
+            <td>Ciasto szefa kuchni </td>
+            <td></td>
+            <td></td>
+            <td>3,00</td>
+            <td>5,00</td>
+            </tr>
+                                    
+        </tbody>
+    </table>
+    <a href="#offert3">
+        <button type="button" >do góry</button>
+    </a>
+</div>
+
+
+
+<script>
+function myFunction3() {
+  var x = document.getElementById("ofertDessert");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</div>
+
+
+
 </div>
 </div>
 
