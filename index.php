@@ -18,7 +18,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div id="topInfo" class="col-sm-12 btn-group" role="group"> <!--top info-->
+            <div id="topInfo" class="col-sm-12 btn-group " role="group"> <!--top info-->
                 <button  class="btn">Darmowa dostawa na terenie Szczecina od 50zł</p></button>
                 <button  class="btn">Godziny otwarcia 11.00-24.00</p></button>
                 <a href="tel:777777OOO" class="position: sticky">
@@ -26,9 +26,9 @@
                 </a>
             </div><!--close topInfo-->
             
-            <!--pizza and info-->
-            <nav class="navbar navbar-expand-md navbar-mymenu col-sm-12 justify-content-center mb-md-4" id="top"><!--open topA bootstrap navbar-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainmenu"
+            <!--navbar-->
+            <nav class="navbar navbar-expand-md navbar-mymenu col-sm-12 justify-content-center mb-md-4 ml-0 pl-0" id="top">
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainmenu"
                 aria-expanded="false">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,13 +45,10 @@
                         </li>
                         <!-- <li class="nav-item ">
                             <a class="nav-link" href="#">OFERTA SPECJALNA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">NASZE RESTAURACJE</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item"> 
-                            <a class="nav-link" href="#">DOSTAWA</a>
-                        </li> -->
+                            <a class="nav-link" href="dostawa.php">DOSTAWA</a>
+                        </li> 
                         <li class="nav-item"> 
                         <a class="nav-link" href="#">KONTAKT</a>
                         </li>
@@ -59,21 +56,40 @@
                 </div>
             </nav>
 
+    <div class="content col-sm-12 align-content-center mb-md-4" id="content"> <!--open content-->
 
-            <div id="offert" class="mb-md-4 col-sm-12 table-responsive">
-                
-            <button type="submit" onClick="myFunction()"  id="offert1" target="_self" role="button" >Call the function</button>
-         
-            </div> <!--close offert-->
+      <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#mycarousel" data-slide-to="1"></li>
+          <li data-target="#mycarousel" data-slide-to="2"></li>
+          
+        </ol>
+      <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="img/dos.jpg"  class="d-block w-100" alt=".">
+          </div>
+          <div class="carousel-item ">
+            <img src="img/menu2.jpg"  class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img src="img/kon.jpg"  class="d-block w-100" alt="...">
+          </div>
+          
+        </div><!-- close carousel-inner -->
+      </div><!-- close carouselExampleIndicators -->
+    </div><!-- close content -->
+
+          
 
             <div id="contact" class="col-sm-12 ">
             <address class="">
-                <p class ="">Szczecin 71-606</br> Sławomira 12/1></br> tel. 777-777-OOO</p>
+                <p class ="text-center">Szczecin 71-606</br>Sławomira 12/1</br>tel. 777-777-OOO</p>
             </address>
             </div> <!-- close contact-->
 
             <buttom class="col-sm-12">
-            <p>© Copyright 2020</p>
+            <p class="pl-5">© Copyright 2020</p>
             </buttom>
 
 

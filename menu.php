@@ -47,10 +47,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">NASZE RESTAURACJE</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item"> 
-                            <a class="nav-link" href="#">DOSTAWA</a>
-                        </li> -->
+                            <a class="nav-link" href="dostawa.php">DOSTAWA</a>
+                        </li> 
                         <li class="nav-item"> 
                         <a class="nav-link" href="kontakt.php">KONTAKT</a>
                         </li>
@@ -65,8 +65,8 @@
         <div>
             <div id="offertPizza" class="mb-md-4 col-sm-12 table-responsive">
                         
-                    <table class="table table-sm table-striped">
-                        <thead>
+                    <table class="table table-sm table-striped ">
+                        <thead class="col-sm-12">
                             <tr>
                             <th scope="col" >lp</th>
                             <th scope="col" >nazwa</th>

@@ -27,8 +27,8 @@
             </div><!--close topInfo-->
             
             <!--pizza and info-->
-            <nav class="navbar navbar-expand-md navbar-mymenu col-sm-12 justify-content-center mb-md-4" id="top"><!--open topA bootstrap navbar-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainmenu"
+            <nav class="navbar navbar-expand-md navbar-mymenu col-sm-12 justify-content-center mb-md-4" id="top">
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainmenu"
                 aria-expanded="false">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,42 +38,34 @@
                         <li class="nav-item col-sm-3" >
                         <img src="img/nav.jpg" alt="" class=" img-fluid"> 
                         </li>
-                    <!-- </ul>
-                    <ul class="navbar-nav col-sm-9 justify-content-center" > -->
+                   
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">GŁÓWNA</a>
                         </li>
                         <!-- <li class="nav-item ">
                             <a class="nav-link" href="#">OFERTA SPECJALNA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">NASZE RESTAURACJE</a>
                         </li>-->
                         <li class="nav-item"> 
-                            <a class="nav-link" href="dostawa.php">DOSTAWA</a>
+                            <a class="nav-link" href="menu.php">MENU</a>
                         </li> 
                         <li class="nav-item"> 
-                        <a class="nav-link" href="menu.php">MENU</a>
+                        <a class="nav-link" href="kontakt.php">KONTAKT</a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
 
-
+          
 
             <div id="contact" class="col-sm-12 ">
-                <address class="">
-                    <p class ="text-center">Szczecin 71-606</br>Sławomira 12/1</br>tel. 777-777-OOO</p>
-                </address>
+                <img src="img/dos.jpg" alt="" class="col-sm-12 col-md-6 img-fluid">
+                <p class ="text-center">Darmowa dostawa na terenie Szczecina.<br/> W innym wypadku koszt dostawy 12zł.</p>
+            
             </div> <!-- close contact-->
 
-            <div><!--add form-->
-
-            </div>
-
             <buttom class="col-sm-12">
-            <p>© Copyright 2020</p>
+            <p class="pl-5">© Copyright 2020</p>
             </buttom>
 
 

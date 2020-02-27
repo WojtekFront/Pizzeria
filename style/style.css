@@ -16,12 +16,15 @@ body{
     .navbar-mymenu .navbar-nav .nav-link{color:#6b3a0a;
         font-family: 'Lato', sans-serif; 
         font-size: 700;
-        font-size: 15px;}
+        font-size: 15px;
+    }
     .navbar-mymenu .navbar-nav .nav-link:focus,.navbar-mymenu .navbar-nav .nav-link:hover{
         color:#352617;
         font-family: 'Lato', sans-serif; 
         font-size: 700;
-        font-size: 16px}
+        font-size: 16px
+    }
+    
 
     
 
