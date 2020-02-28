@@ -8,12 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Maven+Pro:400,500,600,900&display=swap&subset=latin-ext" rel="stylesheet">     
     <link rel="stylesheet" href="style/style.css" type="text/css">
     <style>
+#offertPizza,
 #ofertDessert,
-#ofeertOthers,        
-#offertPizza {
-  display:none;
+#ofeertOthers{
+    display:none;
+
 }
 </style>
+
+
+
+
+
     <title>Document</title>
 </head>
 <body>
@@ -29,7 +35,7 @@
             </div><!--close topInfo-->
             
             <!--pizza and info-->
-            <nav class="navbar navbar-expand-md navbar-mymenu col-sm-12 justify-content-center mb-md-4" id="top"><!--open topA bootstrap navbar-->
+            <nav class="navbar navbar-expand-md navbar-mymenu col-sm-12 justify-content-center mb-md-4" id="top">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainmenu"
                 aria-expanded="false">
                   <span class="navbar-toggler-icon"></span>
@@ -59,15 +65,15 @@
                 </div>
             </nav>
 
+
             <div class="col-sm-12 btn-group" role="group">
                 <button type="button" onClick="myFunction()"  id="offert1" class="btn btn-success"  >Pizza</button>
-                <button type="button" onClick="myFunction2()"  id="offert2" class="btn btn-outline-dark" >Napoje</button>
-                <button type="button" onClick="myFunction3()"  id="offert3" class="btn btn-danger" >Desery</button>
+                <button type="button" onClick="myFunction2()" id="offert2" class="btn btn-outline-dark" >Napoje</button>
+                <button type="button" onClick="myFunction3()" id="offert3" class="btn btn-danger" >Desery</button>
             </div>
-        <div>
+        
             <div id="offertPizza" class="mb-md-4 col-sm-12 table-responsive">
-                        
-                    <table class="table table-sm table-striped ">
+                <table class="table table-sm table-striped ">
                         <thead class="col-sm-12">
                             <tr>
                             <th scope="col" >lp</th>
@@ -224,199 +230,225 @@
                             </tr>
                                                     
                         </tbody>
-                    </table><a href="#offert1">
-                    <button type="button" >do góry</button></a>
+                    </table>
+                <a href="#offert1">
+                    <button type="button" >do góry</button>
+                </a>
 
-        </div>
+            </div>  <!--close offertPizza-->   
 
-        <script>
-            function myFunction() {
-            var x = document.getElementById("offertPizza");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-            }
-        </script>
-
-        </div>
+        
 
 
-<div id="napoje">
+            <div id="napoje">
+
+            <div id="ofeertOthers" class="mb-md-4 col-sm-12 table-responsive">
+                            
+                <table class="table table-sm table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col" >lp</th>
+                        <th scope="col" >nazwa</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">mała 0,5L</th>
+                        <th scope="col">duża 1L</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Cola </td>
+                        <td></td>
+                        <td></td>
+                        <td>5,00</td>
+                        <td>8,00</td>
+                        </tr>
+                        
+                        <tr>
+                        <th scope="row" class="secLine">2</th>
+                        <td>Fanta</td>
+                        <td></td>
+                        <td></td>
+                        <td>5,00</td>
+                        <td>8,00</td>
+                        </tr>
+                        
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>Sok pomarańczowy</td>
+                        <td></td>
+                        <td></td>
+                        <td>3,00</td>
+                        <td>7,00</td>
+                        </tr>
+                        
+                        <tr>
+                        <th scope="row">4</th>
+                        <td>Sok jabłkowy</td>
+                        <td></td>
+                        <td></td>
+                        <td>3,00</td>
+                        <td>7,00</td>
+                        </tr>
+
+                        <tr>
+                        <th scope="row">5</th>
+                        <td>Woda </td>
+                        <td>gazowana lub niegazowana</td>
+                        <td></td>
+                        <td>3,00</td>
+                        <td>5,00</td>
+                        </tr>
+                                                
+                    </tbody>
+                </table>
+                <a href="#offert2">
+                    <button type="button" >do góry</button>
+                </a>
+            </div>
+            </div>
+
+            <div id="dessert">
 
 
 
-<div id="ofeertOthers" class="mb-md-4 col-sm-12 table-responsive">
-                
-    <table class="table table-sm table-striped">
-        <thead>
-            <tr>
-            <th scope="col" >lp</th>
-            <th scope="col" >nazwa</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col">mała 0,5L</th>
-            <th scope="col">duża 1L</th>
-            
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <th scope="row">1</th>
-            <td>Cola </td>
-            <td></td>
-            <td></td>
-            <td>5,00</td>
-            <td>8,00</td>
-            </tr>
-            
-            <tr>
-            <th scope="row" class="secLine">2</th>
-            <td>Fanta</td>
-            <td></td>
-            <td></td>
-            <td>5,00</td>
-            <td>8,00</td>
-            </tr>
-            
-            <tr>
-            <th scope="row">3</th>
-            <td>Sok pomarańczowy</td>
-            <td></td>
-            <td></td>
-            <td>3,00</td>
-            <td>7,00</td>
-            </tr>
-            
-            <tr>
-            <th scope="row">4</th>
-            <td>Sok jabłkowy</td>
-            <td></td>
-            <td></td>
-            <td>3,00</td>
-            <td>7,00</td>
-            </tr>
+            <div id="ofertDessert" class="mb-md-4 col-sm-12 table-responsive">
+                            
+                <table class="table table-sm table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col" >lp</th>
+                        <th scope="col" >nazwa</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">mała porcja</th>
+                        <th scope="col">duża porcja</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>ciasto czekoladowe </td>
+                        <td></td>
+                        <td></td>
+                        <td>5,00</td>
+                        <td>8,00</td>
+                        </tr>
+                        
+                        <tr>
+                        <th scope="row" class="secLine">2</th>
+                        <td>piernik</td>
+                        <td></td>
+                        <td></td>
+                        <td>5,00</td>
+                        <td>8,00</td>
+                        </tr>
+                        
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>Szarlotka</td>
+                        <td></td>
+                        <td></td>
+                        <td>3,00</td>
+                        <td>7,00</td>
+                        </tr>
+                        
+                        <tr>
+                        <th scope="row">4</th>
+                        <td>Mix owoców</td>
+                        <td></td>
+                        <td></td>
+                        <td>3,00</td>
+                        <td>7,00</td>
+                        </tr>
 
-            <tr>
-            <th scope="row">5</th>
-            <td>Woda </td>
-            <td>gazowana lub niegazowana</td>
-            <td></td>
-            <td>3,00</td>
-            <td>5,00</td>
-            </tr>
-                                    
-        </tbody>
-    </table>
-    <a href="#offert2">
-        <button type="button" >do góry</button>
-    </a>
+                        <tr>
+                        <th scope="row">5</th>
+                        <td>Ciasto szefa kuchni </td>
+                        <td></td>
+                        <td></td>
+                        <td>3,00</td>
+                        <td>5,00</td>
+                        </tr>
+                                                
+                    </tbody>
+                </table>
+                <a href="#offert3">
+                    <button type="button" >do góry</button>
+                </a>
+            </div>
+
+
+
+
+            </div>
+
+
+
+</div>
 </div>
 
-
-
 <script>
+    let pizza = document.getElementById("offertPizza");
+    let other = document.getElementById("ofeertOthers");
+    let dessert = document.getElementById("ofertDessert");
+function myFunction() {
+    
+            if (pizza.style.display === "none") {
+
+
+                pizza.style.display = "block";
+                dessert.style.display = "none";
+                other.style.display = "none";
+            } else if(pizza.style.display === "block") {
+                pizza.style.display = "none";
+                dessert.style.display = "none";
+                other.style.display = "none";
+                
+            }
+            else{pizza.style.display = "block";
+                dessert.style.display = "none";
+                other.style.display = "none";
+            }
+}
+
 function myFunction2() {
-  var x = document.getElementById("ofeertOthers");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+    
+            if (other.style.display === "none") {
+                other.style.display = "block";
+                dessert.style.display = "none";
+                pizza.style.display = "none";
+            } else if(other.style.display === "block") {
+                other.style.display = "none";
+                dessert.style.display = "none";
+                pizza.style.display = "none";
+            }
+            else{other.style.display = "block";
+                dessert.style.display = "none";
+                pizza.style.display = "none";}
 }
-</script>
-</div>
 
-<div id="dessert">
-
-
-
-<div id="ofertDessert" class="mb-md-4 col-sm-12 table-responsive">
-                
-    <table class="table table-sm table-striped">
-        <thead>
-            <tr>
-            <th scope="col" >lp</th>
-            <th scope="col" >nazwa</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col">mała porcja</th>
-            <th scope="col">duża porcja</th>
-            
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <th scope="row">1</th>
-            <td>ciasto czekoladowe </td>
-            <td></td>
-            <td></td>
-            <td>5,00</td>
-            <td>8,00</td>
-            </tr>
-            
-            <tr>
-            <th scope="row" class="secLine">2</th>
-            <td>piernik</td>
-            <td></td>
-            <td></td>
-            <td>5,00</td>
-            <td>8,00</td>
-            </tr>
-            
-            <tr>
-            <th scope="row">3</th>
-            <td>Szarlotka</td>
-            <td></td>
-            <td></td>
-            <td>3,00</td>
-            <td>7,00</td>
-            </tr>
-            
-            <tr>
-            <th scope="row">4</th>
-            <td>Mix owoców</td>
-            <td></td>
-            <td></td>
-            <td>3,00</td>
-            <td>7,00</td>
-            </tr>
-
-            <tr>
-            <th scope="row">5</th>
-            <td>Ciasto szefa kuchni </td>
-            <td></td>
-            <td></td>
-            <td>3,00</td>
-            <td>5,00</td>
-            </tr>
-                                    
-        </tbody>
-    </table>
-    <a href="#offert3">
-        <button type="button" >do góry</button>
-    </a>
-</div>
-
-
-
-<script>
-function myFunction3() {
-  var x = document.getElementById("ofertDessert");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+function myFunction3(){
+   
+            if (dessert.style.display === "none") {
+                dessert.style.display = "block";
+                pizza.style.display = "none";
+                other.style.display = "none";
+            } else if(dessert.style.display === "block") {
+                dessert.style.display = "none";
+                pizza.style.display = "none";
+                other.style.display = "none";
+            }
+            else{dessert.style.display = "block";
+                pizza.style.display = "none";
+                other.style.display = "none";}  
 }
+
 </script>
-</div>
 
-
-
-</div>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
