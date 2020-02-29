@@ -62,8 +62,11 @@
 
 
 
-            <div id="contact" class="col-sm-12 ">
-                <address class="">
+            <div id="contact" class="col-sm-12 ml-auto mr-auto mb-md-4">
+                <div class="mapa col-sm-3 float-left">
+                     <img src="img/map.jpg" class="img-fluid">                   
+                </div>
+                <address class="col-sm-4 float-left">
                     <p class ="text-center">Szczecin 71-606</br>Sławomira 12/1</br>tel. 777-777-OOO</p>
                 </address>
             </div> <!-- close contact-->

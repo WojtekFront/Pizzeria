@@ -21,8 +21,8 @@
             <div id="topInfo" class="col-sm-12 btn-group " role="group"> <!--top info-->
                 <button  class="btn">Darmowa dostawa na terenie Szczecina od 50zł</p></button>
                 <button  class="btn">Godziny otwarcia 11.00-24.00</p></button>
-                <a href="tel:777777OOO" class="position: sticky">
-                    <button type="button" class="btn btn-danger" > Tel. 777-777-OOO</button>
+                <a href="tel:777777OOO" class="position: sticky btn btn-danger">
+                Tel. 777-777-OOO
                 </a>
             </div><!--close topInfo-->
             
@@ -56,26 +56,46 @@
                 </div>
             </nav>
 
-    <div class="content col-sm-12 align-content-center mb-md-4" id="content"> <!--open content-->
+    <div class="content col-sm-12  mb-md-4 center-block" id="content"> <!--open content-->
 
-      <div id="mycarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+      <div id="mycarousel" class="carousel slide center-block col-sm-12 col-md-8 ml-auto mr-auto" data-ride="carousel">
+        <!-- <ol class="carousel-indicators">
           <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
           <li data-target="#mycarousel" data-slide-to="1"></li>
           <li data-target="#mycarousel" data-slide-to="2"></li>
           
-        </ol>
-      <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img src="img/dos.jpg"  class="d-block w-100" alt=".">
+        </ol> -->
+          <div class="carousel-inner center-block" role="listbox">
+            <div class="carousel-item active center-block">
+              <img src="img/dos.jpg"  class="center-block" alt="">
+              <div class="carousel-caption">
+                <h1> DARMOWA DOSTAWA NA TERENIE SZCZECINA<h1>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <img src="img/menu2.jpg"  class="d-block w-100 center-block" alt="">
+              <div class="carousel-caption">
+                <h1> SPRAWDŹ NASZE MENU<h1>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <img src="img/kon.jpg"  class="center-block w-100 " alt="">
+              <div class="carousel-caption">
+                <h1>MASZ PYTANIA<br/>LUB UWAGI?<h1>
+              </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <div class="carousel-item ">
-            <img src="img/menu2.jpg"  class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item ">
-            <img src="img/kon.jpg"  class="d-block w-100" alt="...">
-          </div>
-          
+
+
         </div><!-- close carousel-inner -->
       </div><!-- close carouselExampleIndicators -->
     </div><!-- close content -->

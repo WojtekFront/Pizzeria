@@ -5,8 +5,17 @@ body{
    display: block;
    color:#6b3a0a;
    font-family: 'Lato', sans-serif; 
-   
-    }
+}
+
+#topInfo .btn,
+#topInfo a,
+#topInfo a:link, 
+#topInfo a:visited,
+#topInfo a:hover,
+#topinfo a .btn
+{
+box-shadow: none;
+}
 
     .navbar-mymenu .navbar-brand{color:#6b3a0a;
         font-size: 15px;}
@@ -24,13 +33,18 @@ body{
         font-size: 700;
         font-size: 16px
     }
+    .carousel-inner .carousel-item img {
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;     
+        display: block;   
+        }
     
 
-    
-
-    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-        background-color: #fff5aa !important;
-     }
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #fff5aa;
+}
 
 
 

@@ -73,7 +73,8 @@
             </div>
         
             <div id="offertPizza" class="mb-md-4 col-sm-12 table-responsive">
-                <table class="table table-sm table-striped ">
+                <!-- here can use bootsrtap table-hover --->
+                <table class="table table-sm  table-hover table-striped">
                         <thead class="col-sm-12">
                             <tr>
                             <th scope="col" >lp</th>
