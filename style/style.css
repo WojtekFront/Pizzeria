@@ -17,6 +17,15 @@ body{
 box-shadow: none;
 }
 
+#mainMenu{
+    background-image: url("../img/nav.jpg");
+    height:100px;
+    background-repeat: no-repeat;
+    background-repeat: flex;
+    background-position: left;
+    background-size: contain;
+}
+
     .navbar-mymenu .navbar-brand{color:#6b3a0a;
         font-size: 15px;}
     .navbar-mymenu .navbar-brand:focus,.navbar-mymenu .navbar-brand:hover{

@@ -18,11 +18,11 @@
 <body>
     <div class="container">
         <div class="row">
-            <div id="topInfo" class="col-sm-12 btn-group" role="group"> <!--top info-->
+        <div id="topInfo" class="col-sm-12 btn-group d-flex align-items-center" role="group"> <!--top info-->
                 <button  class="btn">Darmowa dostawa na terenie Szczecina od 50zł</p></button>
                 <button  class="btn">Godziny otwarcia 11.00-24.00</p></button>
-                <a href="tel:777777OOO" class="position: sticky">
-                    <button type="button" class="btn btn-danger" > Tel. 777-777-OOO</button>
+                <a href="tel:777777OOO" class="position: sticky btn btn-danger">
+                Tel. 777-777-OOO
                 </a>
             </div><!--close topInfo-->
             
@@ -33,15 +33,11 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="mainMenu" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav justify-content-left col-sm-12">
-                        <li class="nav-item col-sm-3" >
-                        <img src="img/nav.jpg" alt="" class=" img-fluid"> 
-                        </li>
-                    <!-- </ul>
-                    <ul class="navbar-nav col-sm-9 justify-content-center" > -->
+                <div class="collapse navbar-collapse " id="mainMenu" id="navbarNavAltMarkup" background>
+                    <ul class="navbar-nav col-sm-12 d-flex align-items-center justify-content-center">
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php">GŁÓWNA</a>
+                            <a class="nav-link btn" href="index.php">GŁÓWNA</a>
                         </li>
                         <!-- <li class="nav-item ">
                             <a class="nav-link" href="#">OFERTA SPECJALNA</a>
@@ -50,10 +46,13 @@
                             <a class="nav-link" href="#">NASZE RESTAURACJE</a>
                         </li>-->
                         <li class="nav-item"> 
-                            <a class="nav-link" href="dostawa.php">DOSTAWA</a>
+                            <a class="nav-link " href="dostawa.php">DOSTAWA</a>
                         </li> 
                         <li class="nav-item"> 
-                        <a class="nav-link" href="menu.php">MENU</a>
+                            <a class="nav-link" href="menu.php">MENU</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="kontakt.php">MENU</a>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +61,7 @@
 
 
 
-            <div id="contact" class="col-sm-12 ml-auto mr-auto mb-md-4">
+            <div id="contact" class="col-sm-12 d-flex align-items-center justify-content-center mb-md-4">
                 <div class="mapa col-sm-3 float-left">
                      <img src="img/map.jpg" class="img-fluid">                   
                 </div>

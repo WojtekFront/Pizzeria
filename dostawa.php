@@ -18,38 +18,41 @@
 <body>
     <div class="container">
         <div class="row">
-            <div id="topInfo" class="col-sm-12 btn-group" role="group"> <!--top info-->
+        <div id="topInfo" class="col-sm-12 btn-group d-flex align-items-center" role="group"> <!--top info-->
                 <button  class="btn">Darmowa dostawa na terenie Szczecina od 50zł</p></button>
                 <button  class="btn">Godziny otwarcia 11.00-24.00</p></button>
-                <a href="tel:777777OOO" class="position: sticky">
-                    <button type="button" class="btn btn-danger" > Tel. 777-777-OOO</button>
+                <a href="tel:777777OOO" class="position: sticky btn btn-danger">
+                Tel. 777-777-OOO
                 </a>
             </div><!--close topInfo-->
             
-            <!--pizza and info-->
-            <nav class="navbar navbar-expand-md navbar-mymenu col-sm-12 justify-content-center mb-md-4" id="top">
-                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainmenu"
+            <!--navbar-->
+            <nav class="navbar navbar-expand-md navbar-mymenu col-sm-12 justify-content-center mb-md-4" id="top"><!--open topA bootstrap navbar-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainmenu"
                 aria-expanded="false">
                   <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="mainMenu" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav justify-content-left col-sm-12">
-                        <li class="nav-item col-sm-3" >
-                        <img src="img/nav.jpg" alt="" class=" img-fluid"> 
-                        </li>
-                   
+                <div class="collapse navbar-collapse " id="mainMenu" id="navbarNavAltMarkup" background>
+                    <ul class="navbar-nav col-sm-12 d-flex align-items-center justify-content-center">
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php">GŁÓWNA</a>
+                            <a class="nav-link btn" href="index.php">GŁÓWNA</a>
                         </li>
                         <!-- <li class="nav-item ">
                             <a class="nav-link" href="#">OFERTA SPECJALNA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NASZE RESTAURACJE</a>
                         </li>-->
                         <li class="nav-item"> 
-                            <a class="nav-link" href="menu.php">MENU</a>
+                            <a class="nav-link " href="dostawa.php">DOSTAWA</a>
                         </li> 
                         <li class="nav-item"> 
-                        <a class="nav-link" href="kontakt.php">KONTAKT</a>
+                            <a class="nav-link" href="menu.php">MENU</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="kontakt.php">KONTAKT</a>
                         </li>
                     </ul>
                 </div>
@@ -58,10 +61,13 @@
 
           
 
-            <div id="contact" class="col-sm-12 ">
-                <img src="img/dos.jpg" alt="" class="col-sm-12 col-md-6 img-fluid">
-                <p class ="text-center">Darmowa dostawa na terenie Szczecina.<br/> W innym wypadku koszt dostawy 12zł.</p>
-            
+            <div id="contact" class="col-sm-12 d-flex align-items-center justify-content-center mb-md-4">
+                <div class="col-sm-3 float-left">    
+                    <img src="img/dos.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-4 float-left">
+                    <p class ="text-center">Darmowa dostawa na terenie Szczecina.<br/> W innym wypadku koszt dostawy 12zł.</p>
+                </div>
             </div> <!-- close contact-->
 
             <buttom class="col-sm-12">
