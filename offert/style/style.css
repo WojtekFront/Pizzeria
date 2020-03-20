@@ -54,6 +54,12 @@ box-shadow: none;
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
     background-color: #fff5aa;
 }
+.table-striped > thead > tr:hover ,
+.table-striped > tbody > tr:nth-child(2n+1):hover, .table-striped > tbody > tr:nth-child(2n+1):hover,
+.table-striped > tbody > tr:hover, .table-striped > tbody > tr:hover{
+    
+    background-color: black !important;
+}
 
 
 
