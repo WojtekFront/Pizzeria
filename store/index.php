@@ -14,9 +14,8 @@ include_once 'DB/db.php';
 <body>
     
 
-<?php $a=$query;
-echo $a;?>
 
+<h3>Add reservation</h3>
 <form action="/action_page.php">
     <div>
     <label for="Miejsce">Miejsce:</label>
@@ -30,6 +29,17 @@ echo $a;?>
         <?php endwhile;?>
         </select>
     </div>
+
+    <div>
+        <label for="person">Miejsce:</label>
+        <select id="person">
+  
+        <option value=""></option>
+       
+        </select>
+    </div>
+
+
     <div>
         <label for="dateStart">Start date:</label>
         <input type="date" id="dateStart" name="dateStart"><br>
@@ -42,6 +52,27 @@ echo $a;?>
     <div>        
         <input type="submit" value="Submit">
 </form>
+
+
+
+</br>
+<h3>Add Person</h3>
+<form action="person/person.php" method="POST">
+    <input type="text" name="imiePerson" placeholder="imie" require><br>
+    <input type="text" name="nazwiskoPerson" placeholder="nazwisko" require><br>
+    <input type="text" name="telefonPerson" placeholder="telefon" require><br>
+    <input type="text" name="emailPerson" placeholder="e-mail" require><br>
+    <input type="text" name="opisPerson" placeholder="opis" require><br>
+    <button type="submit" name="submit">ZAPISZ</button>
+</form>
+
+
+
+
+
+
+
+
 
 
 
