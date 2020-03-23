@@ -1,14 +1,17 @@
 <?php
+session_start();
 include_once 'DB/db.php';
-
+include_once 'place/place.php';
+include_once 'person/person.php';
+include_once 'przedmiot/przedmiot.php';
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleCss/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -16,48 +19,45 @@ include_once 'DB/db.php';
 
 
 <h3>Add reservation</h3>
-<form action="/action_page.php">
+<form action="" class="mainForm">
     <div>
     <label for="Miejsce">Miejsce:</label>
-    <input type="text" id="Miejsce" name="Miejsce"><br>       
-    </div>
-    <div>
-        <label for="person">Person:</label>
-        <select id="person">
-        <?php while($row1=mysqli_fetch_array($result1)):;?>
-        <option value=""><?php echo $row1[1];?></option>
-        <?php endwhile;?>
-        </select>
+    <?php
+     echo $_SESSION['selectPlace'];
+    ?>
     </div>
 
     <div>
-        <label for="person">Miejsce:</label>
-        <select id="person">
-  
-        <option value=""></option>
-       
-        </select>
+        <label for="person">Person: </label>
+        <?php
+        echo $_SESSION['selectPerson'];
+        ?>
     </div>
 
-
+    <div>
+        <label for="subject">Pzedmiot: </label>
+        <?php
+        echo $_SESSION['selectSubject'];
+        ?>
+    </div>
+   
     <div>
         <label for="dateStart">Start date:</label>
         <input type="date" id="dateStart" name="dateStart"><br>
     </div>
     
-    <div>
-        <label for="endDate">End date: </label>
-        <input type="date" id="endDate" name="endDate"><br>
-    </div>
     <div>        
-        <input type="submit" value="Submit">
+        <input type="submit" value="ZAPISZ">
+</div>
 </form>
 
 
 
 </br>
 <h3>Add Person</h3>
-<form action="person/person.php" method="POST">
+
+
+<form action="" method="POST" class="mainForm">
     <input type="text" name="imiePerson" placeholder="imie" require><br>
     <input type="text" name="nazwiskoPerson" placeholder="nazwisko" require><br>
     <input type="text" name="telefonPerson" placeholder="telefon" require><br>
