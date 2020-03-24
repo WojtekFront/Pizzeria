@@ -15,11 +15,9 @@ include_once 'przedmiot/przedmiot.php';
     <title>Document</title>
 </head>
 <body>
-    
 
-
-<h3>Add reservation</h3>
-<form action="reservation/reservation.php" class="mainForm" method="POST">
+<h3>Dodaj rezerwację:</h3>
+<form action="reservation/addReservation.php" class="mainForm" method="POST">
     <div>
         <label for="przedmiot">Pzedmiot: </label>
         <?php
@@ -51,18 +49,36 @@ include_once 'przedmiot/przedmiot.php';
 </div>
 </form>
 
+<br>
+<h3>Dodaj przedmiot</h3>
 
+<form action="przedmiot/addPrzedmiot.php" method="POST" class="mainForm">
+    <input type="text" name="rodzajPrzedmiotu" placeholder="rodzaj przedmiotu" require><br>
+    <input type="text" name="oznaczeniePrzedmiotu" placeholder="oznaczenie przedmiotu" require><br>
+    <input type="date" name="rokPrzedmiotu"  require><br>
+    <input type="text" name="waroscPrzedmiotu" placeholder="warosc przedmiotu (PLN)" require><br>
+    <input type="text" name="opisPrzedmiotu" placeholder="opis przedmiotu" require><br>
+    <button type="submit" name="submit">ZAPISZ</button>
+</form>
 
-</br>
-<h3>Add Person</h3>
+<br>
+<h3>Dodaj pracownika</h3>
 
-
-<form action="" method="POST" class="mainForm">
+<form action="person/addPerson.php" method="POST" class="mainForm">
     <input type="text" name="imiePerson" placeholder="imie" require><br>
     <input type="text" name="nazwiskoPerson" placeholder="nazwisko" require><br>
     <input type="text" name="telefonPerson" placeholder="telefon" require><br>
     <input type="text" name="emailPerson" placeholder="e-mail" require><br>
     <input type="text" name="opisPerson" placeholder="opis" require><br>
+    <button type="submit" name="submit">ZAPISZ</button>
+</form>
+
+</br>
+<h3>Dodaj miejsce</h3>
+
+<form action="place/addPlace.php" method="Post" class="mainForm">
+    <input type="text" name="nazwaMiejsca" placeholder="nazwa miejsca" require><br>
+    <input type="text" name="opisMiejsca" placeholder="opis" require><br>
     <button type="submit" name="submit">ZAPISZ</button>
 </form>
 
