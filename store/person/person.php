@@ -13,10 +13,10 @@
     $sqlSelect="SELECT * From person";
     $resultPerson=mysqli_query($conn, $sqlSelect);
     $opt="";
-    $opt .="<select name='first_name' id='person'>";
-    $opt .="<option value=''>wybierz</option><br>";
+    $opt .="<select name='name' id='person'>";
+    $opt .="<option value='0'>wybierz</option><br>";
     while($row=mysqli_fetch_assoc($resultPerson)){
-        $opt .="<option value='name'>{$row['nazwiskoPerson']} {$row['imiePerson']}</option>\n";
+        $opt .="<option value='{$row['idPerson']}'>{$row['nazwiskoPerson']} {$row['imiePerson']}</option>\n";
     }
     $opt .="</select>";
   

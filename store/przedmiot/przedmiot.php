@@ -8,11 +8,11 @@
 
 $sqlPrzedmiot="SELECT * From przedmiot";
 $resultPrzedmiot=mysqli_query($conn, $sqlPrzedmiot);
-$opt="";
-$opt .="<select name='place1' id='place1'>";
-$opt .="<option value=''>wybierz</option><br>";
+$opt ="";
+$opt .="<select name='przedmiot' id='name'>";
+$opt .="<option value='0'>wybierz</option><br>";
 while($row=mysqli_fetch_assoc($resultPrzedmiot)){
-    $opt .="<option value='ttt'>{$row['rodzajPrzedmiotu']}</option>\n";
+    $opt .="<option value='{$row['ID']}'>{$row['rodzajPrzedmiotu']}</option>\n";
 }
 $opt .="</select>";
 

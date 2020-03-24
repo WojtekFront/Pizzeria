@@ -5,8 +5,8 @@ $dbPasword = "";
 $dataBaseName = "storepizza";
 
 $conn = mysqli_connect($hostname, $dbUsername, $dbPasword, $dataBaseName); 
-$query = "SELECT * FROM person;";
-$result1 = mysqli_query($conn, $query);
+// $query = "SELECT * FROM person;";
+// $result1 = mysqli_query($conn, $query);
 
 // $query1 ="SELECT * FROM place;";
 // $result2 = mysqli_query($conn, $query1);

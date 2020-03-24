@@ -8,10 +8,10 @@
 $sqlPlace="SELECT * From place";
 $resultPlace=mysqli_query($conn, $sqlPlace);
 $opt="";
-$opt .="<select name='place1' id='place1'>";
-$opt .="<option value=''>wybierz</option><br>";
+$opt .="<select name='place' id='place'>";
+$opt .="<option value='0'>wybierz</option><br>";
 while($row=mysqli_fetch_assoc($resultPlace)){
-    $opt .="<option value='ttt'>{$row['nazwaMiejsca']}</option>\n";
+    $opt .="<option value='{$row['idMiejsca']}'>{$row['nazwaMiejsca']}</option>\n";
 }
 $opt .="</select>";
 // $opt="jan";

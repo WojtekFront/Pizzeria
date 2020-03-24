@@ -19,33 +19,33 @@ include_once 'przedmiot/przedmiot.php';
 
 
 <h3>Add reservation</h3>
-<form action="" class="mainForm">
+<form action="reservation/reservation.php" class="mainForm" method="POST">
+    <div>
+        <label for="przedmiot">Pzedmiot: </label>
+        <?php
+        echo $_SESSION['selectPrzedmiot'];
+        ?>
+    </div>
+    <div>
+        <label for="person">Pracownik: </label>
+        <?php
+        echo $_SESSION['selectPerson'];
+        ?>
+    </div> 
     <div>
     <label for="Miejsce">Miejsce:</label>
     <?php
      echo $_SESSION['selectPlace'];
     ?>
     </div>
-
-    <div>
-        <label for="person">Person: </label>
-        <?php
-        echo $_SESSION['selectPerson'];
-        ?>
-    </div>
-
-    <div>
-        <label for="subject">Pzedmiot: </label>
-        <?php
-        echo $_SESSION['selectSubject'];
-        ?>
-    </div>
-   
     <div>
         <label for="dateStart">Start date:</label>
         <input type="date" id="dateStart" name="dateStart"><br>
     </div>
-    
+    <div>
+    <label for="description1">Opis:</label>
+    <input type="text" name="description1" placeholder="Opis" require><br>
+    </div>
     <div>        
         <input type="submit" value="ZAPISZ">
 </div>
