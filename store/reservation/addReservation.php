@@ -8,12 +8,12 @@ $personID=$_POST['name'];
 $placeID=$_POST['place'];
 $orderDate=$_POST['dateStart'];
 $description1=$_POST['description1'];
-echo $productID.$personID.$placeID.$orderDate.$description1;
+//echo $productID.$personID.$placeID.$orderDate.$description1;
 
 $sql = "INSERT INTO ordersp (productID, personID, placeID, orderDate, description1)
     VALUES('$productID','$personID','$placeID','$orderDate','$description1')";
     
-   mysqli_query($conn, $sql);
+  // mysqli_query($conn, $sql);
    
 
    if (mysqli_query($conn, $sql)) {

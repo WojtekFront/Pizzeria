@@ -5,21 +5,25 @@ if(isset($_GET["person"])){
    // echo $_GET["person"];
     $pracownik_ID = $_GET["person"];
 
+    $sql = "SELECT *
+    FROM ordersp 
+    JOIN place ON ordersp.placeID = place.idMiejsca
+    JOIN przedmiot ON ordersp.productID = przedmiot.ID
     
-
-    $sql = "SELECT imiePerson FROM person WHERE idPerson = $pracownik_ID;";
+     WHERE ordersp.personID = $pracownik_ID ORDER BY ordersp.orderDate ASC;";
     $result =mysqli_query($conn, $sql);
-
+ 
     if(mysqli_num_rows($result)>0){ 
-        $arr=[];
-        while($d = mysqli_fetch_assoc($result)){
-            $arr[] = $d["imiePerson"];
-            
-        }
         
-        echo json_encode($arr);
+        while($d = mysqli_fetch_assoc($result)){
+            $arr[] = $d["orderDate"].",  ".$d["rodzajPrzedmiotu"].",  ".$d["oznaczeniePrzedmiotu"].",  ".$d["placeID"].",".$d["nazwaMiejsca"]."  ";
+        } 
+    }
+    else if(mysqli_num_rows($result)==0){
+        $arr[]="brak zleceń";
     }
 
+    echo json_encode($arr);
 }
 
 // $pracownik = $_POST['name'];
